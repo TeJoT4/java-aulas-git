@@ -1,0 +1,27 @@
+package ativs;
+
+import java.util.Scanner;
+
+public class Atv3Ex3 {
+
+    public static void main(String[] args) {
+        // Cria um objeto Scanner para ler a entrada do usuário
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita ao usuário que informe o número
+        System.out.print("Informe o número que deseja obter a tabuada da divisão: ");
+        int x = scanner.nextInt();
+
+        // Exibe o cabeçalho da tabuada
+        System.out.println("TABUADA DO " + x);
+
+        // Laço para calcular e exibir a tabuada
+        for (int cont = x; cont <= 10 * x; cont += x) {
+            int res = cont / x;
+            System.out.println(cont + " / " + x + " = " + res);
+        }
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
