@@ -1,0 +1,20 @@
+package ativs;
+
+public class Atv3Ex5 {
+
+    public static void main(String[] args) {
+        int anos = 0;
+        double altChico = 1.50;
+        double altZe = 1.10;
+
+        // Loop enquanto a altura de Chico for maior ou igual à altura de Zé
+        while (altChico >= altZe) {
+            anos++;
+            altChico += 0.02; // Chico cresce 2 cm por ano
+            altZe += 0.03;    // Zé cresce 3 cm por ano
+        }
+
+        // Exibir o resultado
+        System.out.println("Serão necessários " + anos + " anos para que Zé seja maior que Chico.");
+    }
+}
